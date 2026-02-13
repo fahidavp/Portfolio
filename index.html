@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+
+  /* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero/1.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+  height: 550px;                 /* KEY: same height for all cards */
+  display: flex;
+  flex-direction: column;
+}
+.card-img-top {
+  max-height: 250px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+  flex-grow: 1;   /* THIS is crucial */   
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: 100%;                 /* KEY: same height for all cards */
+  display: flex;
+  flex-direction: column;
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-4 fw-bold animate-fade-in">Hello, I'm <span class="text-primary">Fahida V P</span></h1>
+      <p class="lead animate-fade-in-delay">Aspiring Data Scientist | Data Analyst | AI / ML | Python | SQL </p>
+  </div>
+</section>
+<!-- About Section -->
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/1.png" alt="About Me">
+    <p>I am an aspiring Data Analyst and Data Scientist with an M.Tech in Computer Science and Engineering, specializing in Data Analysis, Data Science, and Machine Learning. I have a strong foundation in Python, SQL, and statistics, with a focus on solving real-world problems using data-driven approaches.</p>
+    <p>With experience as a Software Developer and Assistant Professor, I bring strong analytical thinking, structured problem-solving, and hands-on experience working with databases and backend systems.</p>
+  </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/1.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Credit Card Fraud Detection</h5>
+            <p class="card-text">Built a machine learning–based credit card fraud detection system using multiple classification algorithms, including Logistic Regression, Decision Tree, Random Forest, and Gaussian Naive Bayes, focusing on data preprocessing, model comparison, and evaluation.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/fahidavp/Credit_Card_Fraud_Detection.git" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/2.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Speech to Text and Language Translator</h5>
+            <p class="card-text">Built an AI-powered application that converts English speech to text and translates it into Spanish, French, and Arabic using IBM Watson Speech to Text and Language Translator APIs.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/fahidavp/Speech_To_Text_and_Language_Translator.git" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/3.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Recommendation System</h5>
+            <p class="card-text">Built a recommendation system using content-based and collaborative filtering techniques to deliver personalized item recommendations based on user preferences and interaction patterns.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/fahidavp/Recommendation_System.git" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/4.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Toronto Neighbourhoods Analysis</h5>
+            <p class="card-text">Analyzed Toronto neighbourhoods using clustering and location-based data to identify patterns and determine optimal areas for opening a gymnasium.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/fahidavp/CapstoneProject_TorontoNeighbourhoods.git" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/5.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Machine Learning – Regression</h5>
+            <p class="card-text">Developed and evaluated regression-based machine learning models to understand relationships between variables and make data-driven predictions. Implemented Linear Regression for continuous value prediction and Logistic Regression for binary classification tasks.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/fahidavp/MachineLearning_Regression.git" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/6.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Machine Learning – Classification</h5>
+            <p class="card-text">Built and evaluated classification models using KNN, Decision Tree, SVM, and Logistic Regression, focusing on data preprocessing, model comparison, and performance evaluation.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/fahidavp/MachineLearning_Classification.git" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-6 col-md-4 col-lg-2-4 mb-4">
+        <div class="card">
+          <img src="images/skills/1.png" class="card-img-top" alt="Data Analysis & Machine Learning">
+          <div class="card-body">
+            <h5 class="card-title">Data Analysis & Machine Learning</h5>
+            <ul class="mb-0">
+              <li>Data Analysis</li>
+              <li>Machine Learning</li>
+              <li>Statistics</li>
+              <li>Feature Engineering</li>
+            </ul>
+              <!--<a href="#" class="btn btn-outline-primary mt-auto">Link to course</a>  -->         
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-6 col-md-4 col-lg-2-4 mb-4">
+        <div class="card">
+          <img src="images/skills/2.png" class="card-img-top" alt="Programming">
+          <div class="card-body">
+            <h5 class="card-title">Programming</h5>
+            <ul class="mb-0">
+              <li>Python</li>
+              <li>C#</li>
+              <li>C, C++</li>
+            </ul>
+            <!--<a href="#" class="btn btn-outline-primary mt-auto">Link to course</a>-->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-6 col-md-4 col-lg-2-4 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="Libraries & Tools">
+          <div class="card-body">
+            <h5 class="card-title">Libraries & Tools</h5>
+            <ul class="mb-0">
+              <li>Pandas, NumPy</li>
+              <li>Scikit-learn</li>
+              <li>Seaborn</li>
+              <li>Matplotlib</li>
+              <li>Jupyter Notebook</li>
+              <li>JupyterLab</li>
+            </ul>
+            <!--<a href="#" class="btn btn-outline-primary mt-auto">Link to course</a>-->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-6 col-md-4 col-lg-2-4 mb-4">
+        <div class="card">
+          <img src="images/skills/4.png" class="card-img-top" alt="Databases">
+          <div class="card-body">
+            <h5 class="card-title">Databases</h5>
+            <ul class="mb-0">
+              <li>MS SQL Server</li>
+              <li>MySQL</li>
+              <li>IBM Db2</li>
+            </ul>
+            <!--<a href="#" class="btn btn-outline-primary mt-auto">Link to course</a>-->
+          </div>
+        </div>
+      </div>
+       <!-- Skill 5 -->
+      <div class="col-6 col-md-4 col-lg-2-4 mb-4">
+        <div class="card">
+          <img src="images/skills/5.png" class="card-img-top" alt="Web & Backend">
+          <div class="card-body">
+            <h5 class="card-title">Web & Backend</h5>
+            <ul class="mb-0">
+              <li>ASP.NET, MVC</li>
+              <li>Entity Framework</li>
+              <li>HTML, CSS, JavaScript</li>
+            </ul>
+            <!--<a href="#" class="btn btn-outline-primary mt-auto">Link to course</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row align-items-center text-center">
+      <div class="col-lg-4 col-md-4 mb-2">
+        <p class="mb-0">
+          <i class="fas fa-envelope"></i> fahidavp28@gmail.com
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4 mb-2">
+        <p class="mb-0">
+          <i class="fas fa-phone"></i> +971 52591464
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4 mb-2">
+        <a href="assets/Fahida_Resume.pdf" download target="_blank"> 
+          <!--<img src="icons/PDF.svg" alt="Download Resume" class="social-icon">-->Download Resume
+        </a>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center mt-4">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://linkedin.com/in/fahidavp94" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/fahidavp" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://kaggle.com/fahidavp" target="_blank">
+          <img src="icons/Kaggle.png" alt="Kaggle" class="social-icon">
+          Kaggle
+        </a>
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="text-center">
+      <p class="mb-0">
+        © 2026 Fahida | Built with HTML, CSS & Bootstrap
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="assets/Fahida_Resume.pdf" download target="_blank">Download Resume</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
